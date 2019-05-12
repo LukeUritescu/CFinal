@@ -18,12 +18,114 @@
     <ClInclude Include="pch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="MathClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TakeInOrder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CashRegister.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Coin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Penny.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Nickel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Quarter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OneDollar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FiveDollar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TenDollar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TwentyDollar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuItems.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Coffee.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Latte.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EggSandwich.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Doughnut.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="CFinal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MathClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TakeInOrder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CashRegister.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Coin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Penny.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Nickel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dime.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Quarter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OneDollar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FiveDollar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TenDollar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TwentyDollar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuItems.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Coffee.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Latte.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EggSandwich.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Doughnut.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

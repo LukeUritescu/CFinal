@@ -151,16 +151,50 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="CashRegister.h" />
+    <ClInclude Include="Coffee.h" />
+    <ClInclude Include="Coin.h" />
+    <ClInclude Include="Dime.h" />
+    <ClInclude Include="Doughnut.h" />
+    <ClInclude Include="EggSandwich.h" />
+    <ClInclude Include="FiveDollar.h" />
+    <ClInclude Include="Latte.h" />
+    <ClInclude Include="MathClass.h" />
+    <ClInclude Include="MenuItems.h" />
+    <ClInclude Include="Nickel.h" />
+    <ClInclude Include="OneDollar.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="Penny.h" />
+    <ClInclude Include="Quarter.h" />
+    <ClInclude Include="TakeInOrder.h" />
+    <ClInclude Include="TenDollar.h" />
+    <ClInclude Include="TwentyDollar.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CashRegister.cpp" />
     <ClCompile Include="CFinal.cpp" />
+    <ClCompile Include="Coffee.cpp" />
+    <ClCompile Include="Coin.cpp" />
+    <ClCompile Include="Dime.cpp" />
+    <ClCompile Include="Doughnut.cpp" />
+    <ClCompile Include="EggSandwich.cpp" />
+    <ClCompile Include="FiveDollar.cpp" />
+    <ClCompile Include="Latte.cpp" />
+    <ClCompile Include="MathClass.cpp" />
+    <ClCompile Include="MenuItems.cpp" />
+    <ClCompile Include="Nickel.cpp" />
+    <ClCompile Include="OneDollar.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="Penny.cpp" />
+    <ClCompile Include="Quarter.cpp" />
+    <ClCompile Include="TakeInOrder.cpp" />
+    <ClCompile Include="TenDollar.cpp" />
+    <ClCompile Include="TwentyDollar.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
