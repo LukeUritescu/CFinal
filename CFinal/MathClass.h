@@ -13,13 +13,12 @@
 #include "FiveDollar.h"
 #include "TenDollar.h"
 #include "TwentyDollar.h"
-
 #ifndef CFINAL_MATHCLASS_H
 #define CFINAL_MATHCLASS_H
 class MathClass
 {
 public:
-	void TotalCostOfOrder();
+	double TotalCostOfOrder(std::vector<Coin> Order);
 	std::vector<Coin> makeChange(double payment);
 
 

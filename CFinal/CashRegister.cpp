@@ -11,12 +11,25 @@ void CashRegister::printAllMenuItems()
 		<< menuItems[3].GetMenuName() << ": $" << menuItems[3].GetMonetaryValue() << "\n";
 }
 
+void CashRegister::MakeChange(double amount)
+{
+	change = math->makeChange(amount);
+}
+
+void CashRegister::printTheChange()
+{
+	std::cout << "Change: " << math->TotalCostOfOrder(change) << "\n";
+	for (std::vector<Coin>::iterator it = change.begin(); it != change.end(); ++it) {
+		std::cout << it->GetName() << "\n";
+	}
+}
+
 CashRegister::CashRegister()
 {
-	menuItems.push_back(coffee);
-	menuItems.push_back(latte);
-	menuItems.push_back(eggSandwich);
-	menuItems.push_back(doughnut);
+	menuItems.push_back(*coffee);
+	menuItems.push_back(*latte);
+	menuItems.push_back(*eggSandwich);
+	menuItems.push_back(*doughnut);
 
 }
 

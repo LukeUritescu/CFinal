@@ -2,8 +2,12 @@
 #include "MathClass.h"
 
 
-void MathClass::TotalCostOfOrder()
+double MathClass::TotalCostOfOrder(std::vector<Coin> Order)
 {
+	for (std::vector<Coin>::iterator it = Order.begin(); it != Order.end(); ++it) {
+		totalCostOfOrder = totalCostOfOrder + round(it->GetMonetaryValue());
+	}
+	return totalCostOfOrder;
 }
 
 std::vector<Coin> MathClass::makeChange(double payment)
