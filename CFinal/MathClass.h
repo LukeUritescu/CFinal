@@ -4,6 +4,7 @@
 #include <math.h>
 #include <iostream>
 
+#include "MenuItems.h"
 #include "Coin.h"
 #include "Penny.h"
 #include "Nickel.h"
@@ -18,16 +19,16 @@
 class MathClass
 {
 public:
-	double TotalCostOfOrder(std::vector<Coin> Order);
+	double TotalCostOfOrder(std::vector<MenuItems> Order);
 	std::vector<Coin> makeChange(double payment);
-
+	double GetChangeOfOrder(std::vector<Coin> giveChange);
 
 	MathClass();
 	~MathClass();
 protected:
 	double totalCostOfOrder;
 	double payment;
-
+	double changeAmount;
 	std::vector<Coin> change;
 
 	Penny penny;

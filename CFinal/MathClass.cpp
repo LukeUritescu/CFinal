@@ -2,19 +2,19 @@
 #include "MathClass.h"
 
 
-double MathClass::TotalCostOfOrder(std::vector<Coin> Order)
+double MathClass::TotalCostOfOrder(std::vector<MenuItems> Order)
 {
-	for (std::vector<Coin>::iterator it = Order.begin(); it != Order.end(); ++it) {
-		totalCostOfOrder = totalCostOfOrder + round(it->GetMonetaryValue());
+	for (std::vector<MenuItems>::iterator it = Order.begin(); it != Order.end(); ++it) {
+		totalCostOfOrder = totalCostOfOrder + it->GetMonetaryValue();
 	}
 	return totalCostOfOrder;
 }
 
 std::vector<Coin> MathClass::makeChange(double payment)
 {
-	while (payment > 0) {
+	while (payment > 0.00) {
 		if ((payment - (twentyDollar.GetMonetaryValue())) >= 0) {
-			payment = payment - twentyDollar.GetMonetaryValue();
+			payment = payment -twentyDollar.GetMonetaryValue();
 			change.push_back(twentyDollar);
 		}
 		
@@ -48,7 +48,7 @@ std::vector<Coin> MathClass::makeChange(double payment)
 			change.push_back(nickel);
 		}
 
-		else if ((payment - (penny.GetMonetaryValue())) >= 0) {
+		else if ((payment - (penny.GetMonetaryValue())) >= 0.00) {
 			payment = payment - penny.GetMonetaryValue();
 			change.push_back(penny);
 		}
@@ -59,6 +59,14 @@ std::vector<Coin> MathClass::makeChange(double payment)
 
 	}
 	return change;
+}
+
+double MathClass::GetChangeOfOrder(std::vector<Coin> giveChange)
+{
+	for (std::vector<Coin>::iterator it = giveChange.begin(); it != giveChange.end(); ++it) {
+		changeAmount = changeAmount + it->GetMonetaryValue();
+	}
+	return changeAmount;
 }
 
 MathClass::MathClass()
